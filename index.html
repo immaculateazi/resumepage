@@ -1,0 +1,92 @@
+<!-- demo1.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ResumeForMyJob — Build a resume that gets results</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/">ResumeForMyJob</a>
+      <nav class="nav">
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#cta" class="btn-small">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Create a resume that helps you get hired — fast.</h1>
+        <p class="lead">Simple templates, AI-powered suggestions, and tips for teenagers applying to first jobs or internships.</p>
+        <a id="cta" class="btn-primary" href="#signup">Start Free</a>
+      </div>
+    </section>
+
+    <section id="how" class="features container">
+      <h2>How it works</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Pick a template</h3>
+          <p>Friendly templates designed to highlight school projects, volunteer work, and part-time experience.</p>
+        </article>
+        <article class="card">
+          <h3>Follow step-by-step tips</h3>
+          <p>Real examples and AI suggestions for each section of your resume.</p>
+        </article>
+        <article class="card">
+          <h3>Download or link</h3>
+          <p>Export as PDF or create a shareable resume link to include in applications.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="pricing" class="container pricing">
+      <h2>Pricing</h2>
+      <p class="muted">Free basic plan. Premium: $4.99/month — priority templates & AI suggestions.</p>
+      <div class="center">
+        <a class="btn-secondary" href="#signup">See Plans</a>
+      </div>
+    </section>
+
+    <section id="signup" class="container signup">
+      <h2>Ready to make your resume?</h2>
+      <form class="form">
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          First name
+          <input type="text" placeholder="Aisha">
+        </label>
+        <button class="btn-primary" type="submit">Create my resume</button>
+      </form>
+
+      <!-- ChatGPT interactive section -->
+  <div class="chatgpt-container">
+    <h3>Get AI Suggestions for Your Resume</h3>
+    <textarea id="userPrompt" placeholder="Ask ChatGPT for resume tips..." rows="3"></textarea><br>
+    <button class="btn-primary" type="button" onclick="sendPrompt()">Ask ChatGPT</button>
+    <p id="response" class="chat-response"></p>
+  </div>
+
+  <p class="note">
+    Want to connect ChatGPT directly? <a id="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" href="https://chat.openai.com/" target="_blank">Click here</a>.
+  </p>
+</section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> ResumeForMyJob. Built for teens.</small>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
